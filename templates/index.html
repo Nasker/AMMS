@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+   <head>
+      <title>VIPs RADIACTIVE MOTOR CONTROL</title>
+      <link rel="stylesheet" href='../static/style.css'/>
+   </head>
+   <body>
+		<h1>A.M.M.S</h1>
+		<h2> Current Position </h2>
+		<h3>   {{ currentPosition }} mm</h3>
+		<h3> {{ (currentPosition/4)*200  }} steps</h3>
+		<br>
+		<h2> Control Position </h2>
+		<h3> 
+			<a href="/move/plusOneMM" class="button">+1 mm</a>  
+			<a href="/move/lessOneMM" class="button">-1 mm</a>
+		</h3>
+		<h3>
+			<a href="/move/plusTenMM" class="button">+10 mm</a>  
+			<a href="/move/lessTenMM" class="button">-10 mm</a>
+		</h3>
+		<h3>
+			<a href="/move/gotoZero" class="button">Go To Zero</a>  
+		</h3>
+		<h3>
+			<a href="/move/setZero" class="button">Set Zero</a>  
+		</h3>
+   </body>
+</html>
