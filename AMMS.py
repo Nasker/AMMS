@@ -22,7 +22,8 @@ def index():
               'currentPosition'  : currenPosition,
         }
     return render_template('index.html', **templateData)
-    
+
+
 @amms.route("/<deviceName>/<action>")
 def action(deviceName, action):
     if deviceName == 'move':
@@ -46,5 +47,7 @@ def action(deviceName, action):
               'currentPosition'  : currentPosition,
         }
     return render_template('index.html', **templateData)
+
+
 if __name__ == "__main__":
    amms.run(host='0.0.0.0', port=5000, debug=True)
